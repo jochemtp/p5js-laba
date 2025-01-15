@@ -7,7 +7,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   // Driehoekig prisma met juiste verhoudingen
-  let baseX = 600;
+  let baseX = 800;
   let baseY = 600;
   let height = 200;
   let width = height * sqrt(2);
