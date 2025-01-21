@@ -5,6 +5,7 @@ let knikpuntYLeft, knikpuntYRight;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  
 
   // Driehoekig prisma met juiste verhoudingen
   let baseX = 600;
@@ -58,6 +59,32 @@ function draw() {
   // Draw the original triangle on top
   for (let wall of walls) {
     wall.show();
+  }
+
+  // Album title
+  textAlign(CENTER, CENTER);
+  fill(255);
+  textSize(35);
+  text("The Dark Side of the Moon", width / 2, 50);
+
+  // Tracklist
+  textSize(20);
+  let tracks = [
+    "Speak to Me",
+    "Breathe",
+    "On the Run",
+    "Time",
+    "The Great Gig in the Sky",
+    "Money",
+    "Us and Them",
+    "Any Colour You Like",
+    "Brain Damage",
+    "Eclipse"
+  ];
+  
+  let yOffset = 100;
+  for (let i = 0; i < tracks.length; i++) {
+    text(tracks[i], width / 2, yOffset + i * 30);
   }
 
 
